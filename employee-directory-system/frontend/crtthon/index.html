@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="loginPage" class="login-page">
+    <div class="login-card">
+      <h1>Employee Directory</h1>
+      <p>Sign in to manage employee records</p>
+
+      <form id="loginForm">
+        <label>Username</label>
+        <input type="text" id="loginUsername" placeholder="Enter username" required />
+
+        <label>Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter password" required />
+
+        <button type="submit">Login</button>
+        <div id="loginMessage" class="message"></div>
+      </form>
+    </div>
+  </section>
+
+  <main id="appPage" class="app hidden">
+    <aside class="sidebar">
+      <h2>Employee Directory</h2>
+
+      <button class="nav-btn" data-action="add">Add Employee</button>
+      <button class="nav-btn" data-action="display">Display All Employees</button>
+      <button class="nav-btn" data-action="search">Search Employee</button>
+      <button class="nav-btn" data-action="update">Update Employee</button>
+      <button class="nav-btn" data-action="delete">Delete Employee</button>
+      <button class="nav-btn" data-action="count">Total Employees</button>
+      <button class="nav-btn" data-action="clear">Clear Form</button>
+
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </aside>
+
+    <section class="content">
+      <div id="mainPanel" class="panel"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
